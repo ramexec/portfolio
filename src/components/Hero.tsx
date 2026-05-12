@@ -1,4 +1,15 @@
-import { Download, GitBranch } from "lucide-react"
+import { Download } from "lucide-react"
+
+
+const skills = [
+    "C",
+    "C++",
+    "Java",
+    "Javascript",
+    "Python",
+    "SQL",
+    "Rust"
+];
 
 export const Hero = () => {
     return (
@@ -29,7 +40,7 @@ export const Hero = () => {
             </div>
 
             {/* content  */}
-            <div className="container mx-auto grid lg:grid-cols-2 gap-12  pt-20 p-5 ">
+            <div className="container mx-auto grid lg:grid-cols-2 gap-12 pt-20 p-5 items-center">
                 {/* left column */}
                 <div className="">
                     {/* Eyebrow */}
@@ -90,7 +101,7 @@ export const Hero = () => {
 
                         {[
                             { icon: "/svg/git.svg", href: "https://github.com/ramexec" },
-                            { icon: "/svg/linkedin.svg", href: "https://linkedin.com" },
+                            { icon: "/svg/linkedin.svg", href: "https://www.linkedin.com/in/rahul-mondal-479907219/" },
                         ].map((item, index) => (
                             <a
                                 key={index}
@@ -110,12 +121,8 @@ export const Hero = () => {
 
                 </div>
                 {/* right */}
-                <div
-                    className="flex justify-center items-end relative h-130" style={{ animation: "fade-in 1.1s ease 0.6s forwards", opacity: 0 }} >
-                    <div className="relative w-[320px] h-115">
-
-                        {/* gold glow */}
-                        <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-65 h-25 bg-[#c9a84c] opacity-[0.07] blur-[48px] rounded-full" />
+                <div className="flex items-center  relative" style={{ animation: "fade-in 1.1s ease 0.6s forwards", opacity: 0 }} >
+                    <div className="relative h-full max-w-[360px] lg:max-w-[500px]">
 
                         {/* corner brackets */}
                         <span className="absolute -top-2 -left-2 w-8 h-8 border-t border-l border-[#c9a84c] opacity-60" />
@@ -130,13 +137,37 @@ export const Hero = () => {
                             className="w-full h-full object-cover object-top brightness-75 filter grayscale-15 contrast-105"
                         />
 
+                        {/* floating badge  */}
+                        <div className="text-sm absolute -bottom-4 -right-4 glass rounded px-2 py-2 z-1 animate-float">
+                            <span> Available for work</span>
+                        </div>
+
                         {/* bottom fade */}
                         <div className="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-t from-[#0a0906] to-transparent" />
 
                     </div>
+                  
                 </div>
 
+                  {/* skills */}
+                    <div className="mt-10 w-full animate-fade-in animation-delay-600 flex gap-10">
+                        <p className="text-lg text-[#8a8070] mb-1 text-center font-['DM_Sans'] text-nowrap">
+                            Technologies I know
+                        </p>
 
+                        <div className="relative overflow-hidden w-full">
+                            <div className="flex animate-marquee gap-4 whitespace-nowrap">
+                                {[...skills, ...skills].map((skill, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="px-5 py-2 border border-[#c9a84c]/20 rounded-full bg-white/[0.03] text-[#f5f0e8] text-sm tracking-wide"
+                                    >
+                                        {skill}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
             </div>
 
             {/* Scroll indicator */}
