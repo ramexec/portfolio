@@ -70,7 +70,7 @@ export const About = () => {
               </p>
               <p>
                 Over the years I've gone deep into systems programming with{' '}
-                <span style={{ color: 'var(--text-primary)' }}>C, C++, and Rust</span>, built
+                <span style={{ color: 'var(--text-primary)' }}>Java, Javascript, C, C++, and Rust</span>, built
                 full-stack web apps, and tinkered with desktop software. I love the whole
                 stack — from memory management to pixel-perfect UI.
               </p>

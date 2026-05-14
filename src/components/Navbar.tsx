@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/Button";
+import GreetingButton from "./ui/GreetingsButton";
 
 const links = [
     { href: "#about", label: "About" },
@@ -28,7 +29,8 @@ export const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex">
-                    <Button onClick={() => {}}>Login</Button>
+                    {/* <Button onClick={() => {}}>o(*￣▽￣*)ブ</Button> */}
+                    <GreetingButton />
                 </div>
 
                 {/* Mobile toggle */}
