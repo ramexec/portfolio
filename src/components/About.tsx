@@ -1,5 +1,3 @@
-import React from 'react'
-
 const facts = [
   { emoji: '🎮', label: 'Gamer', desc: 'Exploring worlds when not building them' },
   { emoji: '🍵', label: 'Tea addict', desc: 'Chai fuels every late-night debug session' },
@@ -18,7 +16,7 @@ export const About = () => {
     >
       {/* subtle bg image */}
       <div className='absolute inset-0 z-0 pointer-events-none'>
-        <img src='/about-bg.jpg' alt='' className='w-full h-full object-cover opacity-[0.07]' />
+        <img src={`${import.meta.env.BASE_URL}about-bg.jpg`} alt='' className='w-full h-full object-cover opacity-[0.07]' />
         <div
           className='absolute inset-0'
           style={{

@@ -9,7 +9,7 @@ export const Hero = () => {
             {/* bg */}
             <div className="absolute inset-0">
                 <img
-                    src="/hero-bg.png"
+                    src={`${import.meta.env.BASE_URL}hero-bg.png`}
                     alt="hero-image"
                     className="w-full h-full object-cover opacity-40"
                 />
@@ -90,14 +90,14 @@ export const Hero = () => {
                             }}>
                             View My Work
                         </button>
-                        <a href="/RMRESUME2026.pdf" download="Rahul_Mondal_Resume.pdf">
-  <button className="bg-transparent text-[#f5f0e8] font-['DM_Sans'] text-[12px] font-light tracking-[0.18em] uppercase px-7 sm:px-8 py-[15px] border border-[rgba(245,240,232,0.2)] cursor-pointer transition-all duration-300 hover:border-[#c9a84c] hover:text-[#c9a84c]">
-    <span className="flex items-center gap-2">
-      <Download size={18} />
-      Resume
-    </span>
-  </button>
-</a>
+                        <a href={`${import.meta.env.BASE_URL}RMRESUME2026.pdf`} download="Rahul_Mondal_Resume.pdf">
+                            <button className="bg-transparent text-[#f5f0e8] font-['DM_Sans'] text-[12px] font-light tracking-[0.18em] uppercase px-7 sm:px-8 py-[15px] border border-[rgba(245,240,232,0.2)] cursor-pointer transition-all duration-300 hover:border-[#c9a84c] hover:text-[#c9a84c]">
+                                <span className="flex items-center gap-2">
+                                    <Download size={18} />
+                                    Resume
+                                </span>
+                            </button>
+                        </a>
                     </div>
 
                     {/* Social links */}
@@ -109,8 +109,8 @@ export const Hero = () => {
                             Follow me:
                         </span>
                         {[
-                            { icon: "/svg/git.svg", href: "https://github.com/ramexec" },
-                            { icon: "/svg/linkedin.svg", href: "https://www.linkedin.com/in/rahul-mondal-479907219/" },
+                            { icon: `${import.meta.env.BASE_URL}svg/git.svg`, href: "https://github.com/ramexec" },
+                            { icon: `${import.meta.env.BASE_URL}svg/linkedin.svg`, href: "https://www.linkedin.com/in/rahul-mondal-479907219/" },
                         ].map((item, i) => (
                             <a
                                 key={i}
@@ -143,7 +143,7 @@ export const Hero = () => {
 
                         {/* photo */}
                         <img
-                            src="/myself.png"
+                            src={`${import.meta.env.BASE_URL}myself.png`}
                             alt="Portrait"
                             className="w-full h-full object-cover object-top brightness-75 contrast-105"
                         />

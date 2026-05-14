@@ -1,5 +1,5 @@
 import { Link } from 'lucide-react'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 type Project = {
   title: string
@@ -19,7 +19,7 @@ const projects: Project[] = [
       'A developer tool to manage WSL Instance with the help of a GUI',
     type: 'Desktop',
     tags: ['Node', 'tauri', 'Rust', 'Windows'],
-    image: '/projects/wsl_wrapper.png',
+    image: `${import.meta.env.BASE_URL}projects/wsl_wrapper.png`,
     github: 'https://github.com/ramexec/wsl_wrapper',
     // live: '#',
     featured: true,
@@ -30,7 +30,7 @@ const projects: Project[] = [
       'E-Commerce app made with SpringBoot backend ',
     type: 'Web App',
     tags: ['SpringBoot','React', 'TypeScript', 'MySQL', 'JAVA', 'JavaScript'],
-    image: '/projects/ecom.png',
+    image: `${import.meta.env.BASE_URL}projects/ecom.png`,
     github: 'https://github.com/ramexec/my_page',
     featured: true,
   },
@@ -47,7 +47,7 @@ const typeColors: Record<Project['type'], string> = {
 const allTypes = ['All', 'Web App', 'Desktop', 'Mobile', 'CLI', 'Library'] as const
 
 const GithubIcon = () => (
-  <img src='/svg/git.svg' alt='GitHub' className='w-5 h-5 brightness-0 invert opacity-70 group-hover:opacity-100 transition' />
+  <img src={`${import.meta.env.BASE_URL}svg/git.svg`} alt='GitHub' className='w-5 h-5 brightness-0 invert opacity-70 group-hover:opacity-100 transition' />
 )
 
 const LinkIcon = () => (

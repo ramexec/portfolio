@@ -1,17 +1,15 @@
-import React from 'react'
-
 const socials = [
   {
     label: 'GitHub',
     handle: '@ramexec',
     href: 'https://github.com/ramexec',
-    icon: <img src='/svg/git.svg' alt='GitHub' className='w-5 h-5 brightness-0 invert opacity-70 group-hover:opacity-100 transition' />,
+    icon: <img src={`${import.meta.env.BASE_URL}svg/git.svg`} alt='GitHub' className='w-5 h-5 brightness-0 invert opacity-70 group-hover:opacity-100 transition' />,
   },
   {
     label: 'LinkedIn',
     handle: 'Rahul Mondal',
     href: 'https://www.linkedin.com/in/rahul-mondal-479907219/',
-    icon: <img src='/svg/linkedin.svg' alt='LinkedIn' className='w-5 h-5 brightness-0 invert opacity-70 group-hover:opacity-100 transition' />,
+    icon: <img src={`${import.meta.env.BASE_URL}svg/linkedin.svg`} alt='LinkedIn' className='w-5 h-5 brightness-0 invert opacity-70 group-hover:opacity-100 transition' />,
   },
   {
     label: 'Email',
