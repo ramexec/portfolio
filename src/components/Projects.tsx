@@ -31,7 +31,7 @@ const projects: Project[] = [
     type: 'Web App',
     tags: ['SpringBoot','React', 'TypeScript', 'MySQL', 'JAVA', 'JavaScript'],
     image: `${import.meta.env.BASE_URL}projects/ecom.png`,
-    github: 'https://github.com/ramexec/my_page',
+    github: 'https://github.com/ramexec/ecommerce_v1',
     featured: true,
   },
 ]
