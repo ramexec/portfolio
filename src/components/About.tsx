@@ -1,7 +1,7 @@
 const facts = [
   { emoji: '🎮', label: 'Gamer', desc: 'Exploring worlds when not building them' },
   { emoji: '🍵', label: 'Tea addict', desc: 'Chai fuels every late-night debug session' },
-  { emoji: '🇯🇵', label: 'Learning JP', desc: 'Slowly conquering hiragana & katakana' },
+  { emoji: '🇯🇵', label: 'Learning JP', desc: 'Slowly conquering 漢字' },
   { emoji: '🎵', label: 'Music', desc: 'Lo-fi beats on repeat while coding' },
 ]
 
@@ -156,7 +156,7 @@ export const About = () => {
               <ul className="font-['DM_Sans'] space-y-3 text-sm" style={{ color: 'var(--text-secondary)' }}>
                 {[
                   '🛠  Building personal projects & open source tools',
-                  '📖  Learning Japanese (N4 → N3)',
+                  '📖  Learning Japanese (N3 → N2)',
                   '🚀  Open to contract & full-time work',
                   '🦀  Going deeper into web and systems programming',
                 ].map(item => (
