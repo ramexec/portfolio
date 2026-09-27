@@ -46,8 +46,8 @@
     border-radius: 18px;
   }
 
-   .glass-strong {
-    background: rgba(255, 255, 255, 0.06);
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.39);
 
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
@@ -62,45 +62,53 @@
   }
 }
 
-@layer utilities{
+@layer utilities {
   @keyframes fade-in {
-    from{
+    from {
       opacity: 0;
       transform: translateY(20px);
       filter: blur(10px);
     }
-    to{
+
+    to {
       opacity: 1;
       transform: translateY(0);
       filter: blur(0);
 
     }
   }
+
   .animate-fade-in {
-      animation: fade-in 0.5s ease-in-out both;
+    animation: fade-in 0.5s ease-in-out both;
   }
 
   @keyframes slow-drift {
+
     0%,
     100% {
-      transform: translate(0,0);
+      transform: translate(0, 0);
     }
+
     25% {
       transform: translate(20px, -30px);
     }
+
     50% {
-      transform: translate(-15px,-20px);
+      transform: translate(-15px, -20px);
     }
+
     75% {
       transform: translate(30px, 10px);
     }
   }
 
   @keyframes float {
+
     0%,
     100% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-10px);
     }
@@ -114,10 +122,12 @@
     0% {
       transform: translateX(0);
     }
+
     100% {
       transform: translateX(-50%);
     }
   }
+
   .animate-marquee {
     animation: marquee 30s linear infinite;
   }
