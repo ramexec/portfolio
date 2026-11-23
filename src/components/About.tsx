@@ -5,7 +5,7 @@ const facts = [
   { emoji: '🎵', label: 'Music', desc: 'Lo-fi beats on repeat while coding' },
 ]
 
-const langs = ['C', 'C++', 'Java', 'JavaScript', 'Python', 'SQL', 'Rust']
+// const langs = ['C', 'C++', 'Java', 'JavaScript', 'Python', 'SQL', 'Rust']
 
 export const About = () => {
   return (
