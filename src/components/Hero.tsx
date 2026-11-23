@@ -1,6 +1,13 @@
 import { Download } from "lucide-react"
 
 const skills = ["C", "C++", "Java", "Javascript", "Python", "SQL", "Rust"]
+const particles = Array.from({ length: 30 }, (_, i) => ({
+    id: i,
+    left: Math.random() * 100,
+    top: Math.random() * 100,
+    duration: 15 + Math.random() * 20,
+    delay: Math.random() * 5,
+}))
 
 export const Hero = () => {
     return (
@@ -19,16 +26,16 @@ export const Hero = () => {
 
             {/* floating dots */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                {[...Array(30)].map((_, i) => (
+                {particles.map((particle) => (
                     <div
-                        key={i}
+                        key={particle.id}
                         className="absolute w-1.5 h-1.5 rounded-full opacity-60"
                         style={{
                             backgroundColor: "yellow",
-                            left: `${Math.random() * 100}%`,
-                            top: `${Math.random() * 100}%`,
-                            animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
-                            animationDelay: `${Math.random() * 5}s`,
+                            left: `${particle.left}%`,
+                            top: `${particle.top}%`,
+                            animation: `slow-drift ${particle.duration}s ease-in-out infinite`,
+                            animationDelay: `${particle.delay}s`,
                         }}
                     />
                 ))}
