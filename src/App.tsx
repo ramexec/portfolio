@@ -6,8 +6,8 @@ import { Projects } from "./components/Projects"
 
 export const App = () => {
   return (
-    <div className="min-h-screen overflow-x-hidden">
-      <Navbar/>
+    <div>
+      <Navbar />
       <main>
         <Hero />
         <About />
