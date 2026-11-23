@@ -6,8 +6,8 @@ import { Projects } from "./components/Projects"
 
 export const App = () => {
   return (
-    <div className="min-h-screen overflow-x-hidden">
-      <Navbar/>
+    <div className="mx-auto w-[calc(100%-40px)] max-w-[900px] max-[600px]:w-[calc(100%-28px)]">
+      <Navbar />
       <main>
         <Hero />
         <About />
