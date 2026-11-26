@@ -3,7 +3,7 @@ type Project = {
   description: string
   type: 'Web App' | 'Desktop' | 'Mobile' | 'CLI' | 'Library'
   tags: string[]
-  image: string
+  image?: string
   github?: string
   live?: string
   featured?: boolean
@@ -41,6 +41,17 @@ const projects: Project[] = [
     github: 'https://github.com/ramexec/ecommerce_v1',
     featured: true,
   },
+  {
+    title: 'text-encoder',
+    description:
+      'A simple app to encode text in differnt encodings. this is achieved with the help of python in frontend and c++ native executables in the backend  ',
+    type: 'Desktop',
+    tags: ['C++','Python3'],
+    // image: `${import.meta.env.BASE_URL}projects/ecom.png`,
+    github: 'https://github.com/ramexec/text_encoder',
+    featured: false,
+  },
+
 ]
 
 export const Projects = () => {
